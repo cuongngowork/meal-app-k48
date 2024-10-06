@@ -1,0 +1,115 @@
+/* FavoriteMeals component css */
+.favorite-meals-container {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.favorite-meal-list {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  justify-content: space-between;
+}
+
+.favorite-meal-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.favorite-meal-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  transition: 0.1s;
+}
+
+.favorite-meal-item img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.favorite-meal-item button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: 0.1s;
+}
+
+.favorite-meal-item button:hover {
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+/* Meals component css */
+.meals-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.meal-item {
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.meal-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.meal-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.meal-item .meal-name {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.meal-icon-thumbs-up {
+  transform: scale(1);
+  transition: 0.1s;
+}
+
+.meal-icon-thumbs-up:hover {
+  transform: scale(1.3);
+}
+
+/* Modal component css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 520px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
